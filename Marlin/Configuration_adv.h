@@ -493,7 +493,7 @@
 /**
  * PWM Fan Scaling
  *
- * Define the min/max speeds for PWM fans (as set with M106).
+ * Define the min/max speeds for PWM fans (as set with  ).
  *
  * With these options the M106 0-255 value range is scaled to a subset
  * to ensure that the fan has enough power to spin, or to run lower
@@ -502,7 +502,7 @@
  *
  * Define one or both of these to override the default 0-255 range.
  */
-//#define FAN_MIN_PWM 50
+#define FAN_MIN_PWM 70
 //#define FAN_MAX_PWM 128
 
 /**
@@ -809,7 +809,7 @@
    * differs, a mode set eeprom write will be completed at initialization.
    * Use the option below to force an eeprom write to a V3.1 probe regardless.
    */
-  //#define BLTOUCH_SET_5V_MODE
+  #define BLTOUCH_SET_5V_MODE
 
   /**
    * Safety: Activate if connecting a probe with an unknown voltage mode.
