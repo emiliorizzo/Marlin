@@ -1,0 +1,29 @@
+From bc039902e0921c8008f1bf038cdd94089cd36ee6 Mon Sep 17 00:00:00 2001
+From: emi <emiliorizzo@gmail.com>
+Date: Wed, 13 Jan 2021 20:42:08 -0300
+Subject: [PATCH] Change Extruder PIDs, for MS all metal hotend
+
+---
+ Marlin/Configuration.h | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/Marlin/Configuration.h b/Marlin/Configuration.h
+index 669ed44600..a2abc72dbf 100644
+--- a/Marlin/Configuration.h
++++ b/Marlin/Configuration.h
+@@ -495,9 +495,9 @@
+     #define DEFAULT_Ki_LIST {   1.54,   1.54 }
+     #define DEFAULT_Kd_LIST {  76.55,  76.55 }
+   #else
+-    #define DEFAULT_Kp  21.73
+-    #define DEFAULT_Ki   1.54
+-    #define DEFAULT_Kd  76.55
++    #define DEFAULT_Kp  29.45
++    #define DEFAULT_Ki   3.67
++    #define DEFAULT_Kd  59.02
+   #endif
+ #endif // PIDTEMP
+ 
+-- 
+2.25.1
+

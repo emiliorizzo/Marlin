@@ -1,0 +1,25 @@
+From e82f28b9e410322998fa3f72bb61f72460912537 Mon Sep 17 00:00:00 2001
+From: emi <emiliorizzo@gmail.com>
+Date: Wed, 13 Jan 2021 20:33:54 -0300
+Subject: [PATCH] Change extruder steps for bowden clone extruder
+
+---
+ Marlin/Configuration.h | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/Marlin/Configuration.h b/Marlin/Configuration.h
+index e4735e9152..669ed44600 100644
+--- a/Marlin/Configuration.h
++++ b/Marlin/Configuration.h
+@@ -736,7 +736,7 @@
+  * Override with M92
+  *                                      X, Y, Z, E0 [, E1[, E2...]]
+  */
+-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 93 }
++#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 139.7 }
+ 
+ /**
+  * Default Max Feed Rate (mm/s)
+-- 
+2.25.1
+

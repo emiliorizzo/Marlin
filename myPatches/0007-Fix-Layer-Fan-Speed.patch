@@ -1,0 +1,34 @@
+From a0678ab3075b3ab0c7f273f39964966b0e79894a Mon Sep 17 00:00:00 2001
+From: emi <emiliorizzo@gmail.com>
+Date: Sun, 27 Sep 2020 02:43:51 -0300
+Subject: [PATCH] Fix Layer Fan Speed
+
+---
+ Marlin/Configuration_adv.h | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/Marlin/Configuration_adv.h b/Marlin/Configuration_adv.h
+index 6844d406fa..2a374651b0 100644
+--- a/Marlin/Configuration_adv.h
++++ b/Marlin/Configuration_adv.h
+@@ -397,7 +397,7 @@
+ /**
+  * PWM Fan Scaling
+  *
+- * Define the min/max speeds for PWM fans (as set with M106).
++ * Define the min/max speeds for PWM fans (as set with  ).
+  *
+  * With these options the M106 0-255 value range is scaled to a subset
+  * to ensure that the fan has enough power to spin, or to run lower
+@@ -406,7 +406,7 @@
+  *
+  * Define one or both of these to override the default 0-255 range.
+  */
+-//#define FAN_MIN_PWM 50
++#define FAN_MIN_PWM 70
+ //#define FAN_MAX_PWM 128
+ 
+ /**
+-- 
+2.25.1
+

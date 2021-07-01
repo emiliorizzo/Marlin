@@ -1,0 +1,25 @@
+From 500d2dc5a31eaa5b2980346814e60d81dae669ed Mon Sep 17 00:00:00 2001
+From: emi <emiliorizzo@gmail.com>
+Date: Sun, 27 Sep 2020 02:03:21 -0300
+Subject: [PATCH] Enable ender status screen
+
+---
+ Marlin/Configuration.h | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/Marlin/Configuration.h b/Marlin/Configuration.h
+index 16b265afa6..e4735e9152 100644
+--- a/Marlin/Configuration.h
++++ b/Marlin/Configuration.h
+@@ -92,7 +92,7 @@
+ //#define SHOW_CUSTOM_BOOTSCREEN
+ 
+ // Show the bitmap in Marlin/_Statusscreen.h on the status screen.
+-//#define CUSTOM_STATUS_SCREEN_IMAGE
++#define CUSTOM_STATUS_SCREEN_IMAGE
+ 
+ // @section machine
+ 
+-- 
+2.25.1
+
