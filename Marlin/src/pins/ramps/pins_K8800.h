@@ -25,9 +25,7 @@
  * Velleman K8800 (Vertex)
  */
 
-#if NOT_TARGET(__AVR_ATmega1280__, __AVR_ATmega2560__)
-  #error "Oops! Select 'Arduino/Genuino Mega or Mega 2560' in 'Tools > Board.'"
-#endif
+#include "env_validate.h"
 
 #define BOARD_INFO_NAME      "K8800"
 #define DEFAULT_MACHINE_NAME "Vertex Delta"
@@ -95,7 +93,7 @@
 //
 #define BEEPER_PIN                             6
 
-#if HAS_SPI_LCD
+#if HAS_WIRED_LCD
 
   #define LCD_SDSS                            53
 
@@ -113,10 +111,10 @@
   #define LCD_CONTRAST_MAX                   100
   #define DEFAULT_LCD_CONTRAST                30
 
-  #if ENABLED(NEWPANEL)
+  #if IS_NEWPANEL
     #define BTN_EN1                           17
     #define BTN_EN2                           16
     #define BTN_ENC                           23
   #endif
 
-#endif // HAS_SPI_LCD
+#endif // HAS_WIRED_LCD
