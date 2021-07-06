@@ -1,0 +1,27 @@
+From 7756edebc07591c22cd231d08d5076175381d169 Mon Sep 17 00:00:00 2001
+From: emi <emiliorizzo@gmail.com>
+Date: Thu, 1 Jul 2021 05:14:18 -0300
+Subject: [PATCH] Change BLTouch Z_MIN_PROBE_ENDSTOP_INVERTING to false
+
+Set Z_MIN_PROBE_ENDSTOP_INVERTING to false, otherwise the compilation
+fails.
+---
+ Marlin/Configuration.h | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/Marlin/Configuration.h b/Marlin/Configuration.h
+index ef1425ba6f..a05f1491a7 100644
+--- a/Marlin/Configuration.h
++++ b/Marlin/Configuration.h
+@@ -811,7 +811,7 @@
+ #define I_MAX_ENDSTOP_INVERTING false // Set to true to invert the logic of the endstop.
+ #define J_MAX_ENDSTOP_INVERTING false // Set to true to invert the logic of the endstop.
+ #define K_MAX_ENDSTOP_INVERTING false // Set to true to invert the logic of the endstop.
+-#define Z_MIN_PROBE_ENDSTOP_INVERTING true // Set to true to invert the logic of the probe.
++#define Z_MIN_PROBE_ENDSTOP_INVERTING false // Set to true to invert the logic of the probe.
+ 
+ /**
+  * Stepper Drivers
+-- 
+2.25.1
+

@@ -1,0 +1,25 @@
+From 328cf2c7ad59c68f9de7c6658c206f6282401acb Mon Sep 17 00:00:00 2001
+From: emi <emiliorizzo@gmail.com>
+Date: Sat, 3 Jul 2021 01:51:56 -0300
+Subject: [PATCH] Add Z-OFFSET
+
+---
+ Marlin/Configuration.h | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/Marlin/Configuration.h b/Marlin/Configuration.h
+index a05f1491a7..9b1f62b7f1 100644
+--- a/Marlin/Configuration.h
++++ b/Marlin/Configuration.h
+@@ -1149,7 +1149,7 @@
+  *     |    [-]    |
+  *     O-- FRONT --+
+  */
+-#define NOZZLE_TO_PROBE_OFFSET { -44, -5, 0 }
++#define NOZZLE_TO_PROBE_OFFSET { -44, -5, -2.73 }
+ 
+ // Most probes should stay away from the edges of the bed, but
+ // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
+-- 
+2.25.1
+

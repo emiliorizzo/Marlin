@@ -1,0 +1,25 @@
+From 1b395f2d7f89ed774f068ff8e3121634600aaf23 Mon Sep 17 00:00:00 2001
+From: emi <emiliorizzo@gmail.com>
+Date: Thu, 1 Jul 2021 14:32:43 -0300
+Subject: [PATCH] Disable SD detect, to use wire extensor
+
+---
+ Marlin/Configuration_adv.h | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/Marlin/Configuration_adv.h b/Marlin/Configuration_adv.h
+index 818c23ad09..0a5fc14eaf 100644
+--- a/Marlin/Configuration_adv.h
++++ b/Marlin/Configuration_adv.h
+@@ -1511,7 +1511,7 @@
+   #define SDCARD_CONNECTION ONBOARD
+ 
+   // Enable if SD detect is rendered useless (e.g., by using an SD extender)
+-  //#define NO_SD_DETECT
++  #define NO_SD_DETECT
+ 
+   // Multiple volume support - EXPERIMENTAL.
+   //#define MULTI_VOLUME
+-- 
+2.25.1
+

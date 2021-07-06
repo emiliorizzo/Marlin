@@ -1,0 +1,25 @@
+From 51dbf0ace12e10f73e8bb92074a877709757f426 Mon Sep 17 00:00:00 2001
+From: emi <emiliorizzo@gmail.com>
+Date: Tue, 6 Jul 2021 15:16:21 -0300
+Subject: [PATCH] Update extruder steps for Trianglelab BMG clone
+
+---
+ Marlin/Configuration.h | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/Marlin/Configuration.h b/Marlin/Configuration.h
+index ea2f339c66..4bc418b82e 100644
+--- a/Marlin/Configuration.h
++++ b/Marlin/Configuration.h
+@@ -897,7 +897,7 @@
+  * Override with M92
+  *                                      X, Y, Z [, I [, J [, K]]], E0 [, E1[, E2...]]
+  */
+-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 139.7 }
++#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 415.1 }
+ 
+ /**
+  * Default Max Feed Rate (mm/s)
+-- 
+2.25.1
+

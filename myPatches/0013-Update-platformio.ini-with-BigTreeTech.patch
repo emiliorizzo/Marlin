@@ -1,0 +1,25 @@
+From ba4ca996262fb80ba3c461888340c5c60dc7a0b2 Mon Sep 17 00:00:00 2001
+From: emi <emiliorizzo@gmail.com>
+Date: Thu, 1 Jul 2021 05:01:17 -0300
+Subject: [PATCH] Update platformio.ini with BigTreeTech
+
+---
+ platformio.ini | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/platformio.ini b/platformio.ini
+index 9ce965c900..f06888ee1e 100644
+--- a/platformio.ini
++++ b/platformio.ini
+@@ -13,7 +13,7 @@
+ [platformio]
+ src_dir      = Marlin
+ boards_dir   = buildroot/share/PlatformIO/boards
+-default_envs = STM32F103RC_btt_512K
++default_envs = STM32F103RC_btt_maple
+ include_dir  = Marlin
+ extra_configs =
+     ini/avr.ini
+-- 
+2.25.1
+
